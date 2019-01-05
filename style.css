@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.page1 {
+    background: url(bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.translucent-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.45);
+}
+
+.center-children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Thasadith', sans-serif;
+    color: #222;
+}
+
+html {
+    font-family: 'PT Sans', sans-serif;
+    color: #222;
+}
+
+a, a:link a:visited {
+    transition: color 0.5s ease;
+    color: #222;
+}
+
+a:hover, a:active {
+    color: #888;
+}
+
+.headline {
+    font-size: 40px;
+}
+
+.title {
+    margin-left: 24px;
+}
+
+.menu {
+    margin-right: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.menu h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.page1 .top-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page2 {
+    width: 100%;
+    display: flex;
+}
+
+.page2 .container {
+    flex-grow: 1;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page2 .contacts-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.page2 .contact {
+    flex-grow: 1;
+}
+
+.sibel {
+    margin-right: 8px;
+}
+.sinan {
+    margin-left: 8px;
+}
+
+@media (max-width: 700px) {
+    .page2 .contacts-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+    }
+    .sibel {
+        margin-right: 0;
+    }
+    .sinan {
+        margin-left: 0;
+    }
+}
